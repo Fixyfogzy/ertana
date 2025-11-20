@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eterna Worship Experience 2025 | Eterna Ministries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3D1D75;
+            --primary-dark: #0C1231;
+            --accent: #D9B45C;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-gray: #333333;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+            margin: 1rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .btn-accent:hover {
+            background-color: #c9a048;
+            transform: translateY(-3px);
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(135deg, rgba(61, 29, 117, 0.95) 0%, rgba(12, 18, 49, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(12, 18, 49, 0.98);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        .logo-text span {
+            color: var(--accent);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 2rem;
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background-color: var(--accent);
+            color: var(--primary-dark) !important;
+            padding: 0.6rem 1.5rem !important;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            margin-left: 1rem;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(217, 180, 92, 0.3);
+        }
+
+        .nav-cta:after {
+            display: none;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(61, 29, 117, 0.7), rgba(12, 18, 49, 0.8)), url('https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 1.5rem;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Date & Venue Section */
+        .date-venue {
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .event-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            transition: var(--transition);
+        }
+
+        .detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .detail-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-placeholder {
+            height: 300px;
+            background-color: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gray);
+        }
+
+        /* Countdown Section */
+        .countdown {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .countdown-title {
+            color: var(--white);
+        }
+
+        .countdown-title:after {
+            background-color: var(--accent);
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            min-width: 120px;
+            transition: var(--transition);
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Guest Ministers Section */
+        .ministers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .minister-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .minister-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .minister-image {
+            height: 250px;
+            background-color: #e9e9e9;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .minister-info {
+            padding: 1.8rem;
+        }
+
+        .minister-name {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .minister-role {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+
+        .minister-bio {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Schedule Section */
+        .schedule {
+            background-color: var(--light-gray);
+        }
+
+        .schedule-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .schedule-item {
+            background-color: var(--white);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .schedule-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .schedule-time {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .schedule-title {
+            font-weight: 500;
+            flex-grow: 1;
+            margin-left: 1rem;
+        }
+
+        .schedule-toggle {
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .schedule-content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .schedule-item.active .schedule-content {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 200px;
+        }
+
+        .schedule-item.active .schedule-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* Registration Section */
+        .registration-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(61, 29, 117, 0.2);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--light-gray);
+        }
+
+        .testimonials-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 2rem;
+            padding: 1rem 0;
+            scrollbar-width: none;
+        }
+
+        .testimonial-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testimonial-card {
+            flex: 0 0 300px;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            scroll-snap-align: start;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial-text:before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent);
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-heading:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .nav-item {
+                margin: 0 0 1.5rem 0;
+                width: 100%;
+            }
+
+            .nav-link {
+                padding: 0.8rem 0;
+                font-size: 1.1rem;
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-cta {
+                margin: 1rem 0 0 0;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .registration-form {
+                padding: 1.5rem;
+            }
+
+            .ministers-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .minister-info {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 80px;
+                padding: 1rem;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            .minister-info {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cross logo-icon"></i>
+                <div class="logo-text">Eterna<span>Ministries</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ministers" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        Ministers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#schedule" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">
+                        <i class="fas fa-quote-left"></i>
+                        Testimonials
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#register" class="nav-link nav-cta">
+                        <i class="fas fa-ticket-alt"></i>
+                        Register Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Eterna Worship Experience 2025</h1>
+            <p>A night of spiritual alignment, prophetic worship, and teaching for believers across the nations.</p>
+            <a href="#register" class="btn btn-accent">Register for Free</a>
+        </div>
+    </section>
+
+    <!-- Date & Venue Section -->
+    <section class="date-venue" id="about">
+        <div class="container">
+            <h2 class="section-title">Event Details</h2>
+            <div class="event-details">
+                <div class="detail-card">
+                    <i class="far fa-calendar-alt"></i>
+                    <h3>Date & Time</h3>
+                    <p>March 15, 2025<br>6:00 PM - 10:00 PM</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Venue</h3>
+                    <p>Eterna Worship Center<br>123 Faith Avenue, Cityville</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Attendees</h3>
+                    <p>Worshipers, Leaders & Creatives from across the nation</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <p>Interactive Google Map Would Appear Here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown">
+        <div class="container">
+            <h2 class="section-title countdown-title">Countdown to the Event</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Ministers Section -->
+    <section class="ministers" id="ministers">
+        <div class="container">
+            <h2 class="section-title">Guest Ministers</h2>
+            <div class="ministers-grid">
+                <div class="minister-card">
+                    <div class="minister-image" style="background-image: url('1.png');"></div>
+                    <div class="minister-info">
+                        <h3 class="minister-name">Pastor Ade Johnson</h3>
+                        <p class="minister-role">Worship Leader & Speaker</p>
+                        <p class="minister-bio">With over 15 years in ministry, Pastor Sarah has led worship conferences globally and authored several books on prophetic worship.</p>
+                    </div>
+                </div>
+                <div class="minister-card">
+                    <div class="minister-image" style="background-image: url('2.png');"></div>
+                    <div class="minister-info">
+                        <h3 class="minister-name">Dr. Michael Thompson</h3>
+                        <p class="minister-role">Theologian & Teacher</p>
+                        <p class="minister-bio">Dr. Thompson is renowned for his deep biblical insights and has taught at theological seminaries for over two decades.</p>
+                    </div>
+                </div>
+                <div class="minister-card">
+                    <div class="minister-image" style="background-image: url('3.png');"></div>
+                    <div class="minister-info">
+                        <h3 class="minister-name">Evangelist James Williams</h3>
+                        <p class="minister-role">Evangelist & Worship Leader</p>
+                        <p class="minister-bio">Known for her powerful evangelistic campaigns, Rebecca has a unique gift for combining worship with outreach ministry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Event Schedule</h2>
+            <div class="schedule-container">
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-title">Opening Worship & Prayer</div>
+                        <div class="schedule-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Join us as we begin the evening with powerful worship and corporate prayer, setting the atmosphere for what God wants to do.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <div class="schedule-time">6:45 PM</div>
+                        <div class="schedule-title">Teaching Session: The Heart of Worship</div>
+                        <div class="schedule-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Dr. Michael Thompson will share profound insights on developing a lifestyle of worship beyond musical expression.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <div class="schedule-time">7:30 PM</div>
+                        <div class="schedule-title">Prophetic Worship Session</div>
+                        <div class="schedule-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Pastor Sarah Johnson will lead a powerful time of prophetic worship, creating space for divine encounters.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <div class="schedule-time">8:45 PM</div>
+                        <div class="schedule-title">Ministry & Prayer Time</div>
+                        <div class="schedule-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="schedule-content">
+                        <p>A dedicated time for personal ministry, prayer, and response to the moving of the Holy Spirit.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <div class="schedule-time">9:30 PM</div>
+                        <div class="schedule-title">Closing Worship & Benediction</div>
+                        <div class="schedule-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="schedule-content">
+                        <p>We'll close the evening with celebratory worship and a blessing to send you forth empowered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration" id="register">
+        <div class="container">
+            <h2 class="section-title">Register for Free</h2>
+            <div class="registration-form">
+                <form id="event-registration">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Get Free Pass</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Are Saying</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Last year's Worship Experience completely transformed my approach to worship. The teaching was profound and the atmosphere was electric with God's presence.</p>
+                        <p class="testimonial-author">- Jessica M., Worship Leader</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">I've attended many Christian events, but Eterna Worship Experience stands out. The combination of deep teaching and authentic worship is rare and precious.</p>
+                        <p class="testimonial-author">- David T., Ministry Worker</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">As a creative, I found so much inspiration at this event. It wasn't just about performance but about connecting with God in fresh, meaningful ways.</p>
+                        <p class="testimonial-author">- Rachel L., Musician</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Eterna Ministries</div>
+                    <p class="footer-description">Eterna Ministries exists to equip believers through worship, teaching, and community, fostering spiritual growth and revival across generations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Event Details</a></li>
+                        <li><a href="#ministers">Guest Ministers</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#register">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@eternaministries.org</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Faith Avenue, Cityville</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eterna Ministries. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('March 15, 2025 18:00:00').getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Initialize countdown immediately and update every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Schedule Accordion
+        const scheduleItems = document.querySelectorAll('.schedule-item');
+
+        scheduleItems.forEach(item => {
+            const header = item.querySelector('.schedule-header');
+            
+            header.addEventListener('click', () => {
+                // Close all other items
+                scheduleItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        const registrationForm = document.getElementById('event-registration');
+
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // In a real implementation, you would send this data to a server
+            alert(`Thank you, ${name}! Your registration has been received. A confirmation has been sent to ${email}.`);
+            
+            // Reset form
+            registrationForm.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
